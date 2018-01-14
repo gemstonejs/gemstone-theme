@@ -1,0 +1,142 @@
+/*
+**  GemstoneJS -- Gemstone JavaScript Technology Stack
+**  Copyright (c) 2016-2018 Gemstone Project <http://gemstonejs.com>
+**  Licensed under Apache License 2.0 <https://spdx.org/licenses/Apache-2.0>
+*/
+
+/*  the theme generator function  */
+@define-mixin gs-th-generate
+    $name:         "default",
+    $head-family:  "TypoPRO Bebas Neue",
+    $head-size:    32pt,
+    $body-family:  "TypoPRO Source Sans Pro",
+    $body-size:    14pt,
+    $primal-bg:    #ffffff,
+    $primal-fg:    #222222,
+    $contra-bg:    #222222,
+    $contra-fg:    #ffffff,
+    $accent-bg:    #2068b0,
+    $accent-fg:    #ffffff,
+    $select-bg:    #b06820,
+    $select-fg:    #ffffff,
+    $signal-bg:    #b02020,
+    $signal-fg:    #ffffff
+{
+    /*  define internal mixins for generating CSS properties  */
+    @define-mixin gs-set-fn $family, $size {
+        font-family:         $family;
+        font-size:           $size;
+    }
+    @define-mixin gs-set-bg $bg {
+        background:          $bg;
+        background:          linear-gradient(180deg, $bg, color($bg lightness(-3.0%)));
+    }
+    @define-mixin gs-set-fg $fg {
+        color:               $fg;
+    }
+    @define-mixin gs-set-bd $lt, $rb {
+        border-width:        1px;
+        border-style:        solid;
+        border-top-color:    $lt;
+        border-left-color:   $lt;
+        border-right-color:  $rb;
+        border-bottom-color: $rb;
+    }
+    @define-mixin gs-set-sh $x: 0px, $y: 0px, $blur: 4px, $spread: 0px, $alpha: 0.20, $type: {
+        box-shadow:          $type $x $y $blur $spread rgba(0, 0, 0, $alpha);
+    }
+
+    /*  generate theme context  */
+    .gs-th-ctx-$(name) {
+
+        /*  generate font settings  */
+        &.gs-th-font-head,.gs-th-font-head { @mixin gs-set-fn $head-family, $head-size; }
+        &.gs-th-font-body,.gs-th-font-body { @mixin gs-set-fn $body-family, $body-size; }
+
+        /*  generate area (standard coloring)  */
+        &.gs-th-primal,.gs-th-primal { @mixin gs-set-bg $primal-bg; @mixin gs-set-fg $primal-fg; }
+        &.gs-th-contra,.gs-th-contra { @mixin gs-set-bg $contra-bg; @mixin gs-set-fg $contra-fg; }
+        &.gs-th-accent,.gs-th-accent { @mixin gs-set-bg $accent-bg; @mixin gs-set-fg $accent-fg; }
+        &.gs-th-select,.gs-th-select { @mixin gs-set-bg $select-bg; @mixin gs-set-fg $select-fg; }
+        &.gs-th-signal,.gs-th-signal { @mixin gs-set-bg $signal-bg; @mixin gs-set-fg $signal-fg; }
+
+        /*  generate area (hover coloring)  */
+        &.gs-th-hover,.gs-th-hover {
+            &.gs-th-primal:hover,.gs-th-primal:hover { @mixin gs-set-bg color($primal-bg lightness(+20%)); @mixin gs-set-fg color($primal-fg lightness(+20%)); }
+            &.gs-th-contra:hover,.gs-th-contra:hover { @mixin gs-set-bg color($contra-bg lightness(+20%)); @mixin gs-set-fg color($contra-fg lightness(+20%)); }
+            &.gs-th-accent:hover,.gs-th-accent:hover { @mixin gs-set-bg color($accent-bg lightness(+20%)); @mixin gs-set-fg color($accent-fg lightness(+20%)); }
+            &.gs-th-select:hover,.gs-th-select:hover { @mixin gs-set-bg color($select-bg lightness(+20%)); @mixin gs-set-fg color($select-fg lightness(+20%)); }
+            &.gs-th-signal:hover,.gs-th-signal:hover { @mixin gs-set-bg color($signal-bg lightness(+20%)); @mixin gs-set-fg color($signal-fg lightness(+20%)); }
+        }
+
+        /*  generate area (lighter coloring)  */
+        &.gs-th-lighter,.gs-th-lighter {
+            &.gs-th-primal { @mixin gs-set-bg color($primal-bg lightness(+10%)); @mixin gs-set-fg color($primal-fg lightness(+10%)); }
+            &.gs-th-contra { @mixin gs-set-bg color($contra-bg lightness(+10%)); @mixin gs-set-fg color($contra-fg lightness(+10%)); }
+            &.gs-th-accent { @mixin gs-set-bg color($accent-bg lightness(+10%)); @mixin gs-set-fg color($accent-fg lightness(+10%)); }
+            &.gs-th-select { @mixin gs-set-bg color($select-bg lightness(+10%)); @mixin gs-set-fg color($select-fg lightness(+10%)); }
+            &.gs-th-signal { @mixin gs-set-bg color($signal-bg lightness(+10%)); @mixin gs-set-fg color($signal-fg lightness(+10%)); }
+        }
+
+        /*  generate area (darker coloring)  */
+        &.gs-th-darker,.gs-th-darker {
+            &.gs-th-primal { @mixin gs-set-bg color($primal-bg lightness(-10%)); @mixin gs-set-fg color($primal-fg lightness(-10%)); }
+            &.gs-th-contra { @mixin gs-set-bg color($contra-bg lightness(-10%)); @mixin gs-set-fg color($contra-fg lightness(-10%)); }
+            &.gs-th-accent { @mixin gs-set-bg color($accent-bg lightness(-10%)); @mixin gs-set-fg color($accent-fg lightness(-10%)); }
+            &.gs-th-select { @mixin gs-set-bg color($select-bg lightness(-10%)); @mixin gs-set-fg color($select-fg lightness(-10%)); }
+            &.gs-th-signal { @mixin gs-set-bg color($signal-bg lightness(-10%)); @mixin gs-set-fg color($signal-fg lightness(-10%)); }
+        }
+
+        /*  generate area (alternating coloring)  */
+        &.gs-th-alt,.gs-th-alt {
+            &.gs-th-primal { @mixin gs-set-bg color($primal-bg lightness(-7%)); }
+            &.gs-th-contra { @mixin gs-set-bg color($contra-bg lightness(-7%)); }
+            &.gs-th-accent { @mixin gs-set-bg color($accent-bg lightness(-7%)); }
+            &.gs-th-select { @mixin gs-set-bg color($select-bg lightness(-7%)); }
+            &.gs-th-signal { @mixin gs-set-bg color($signal-bg lightness(-7%)); }
+        }
+
+        /*  generate area (inset coloring)  */
+        &.gs-th-inset,.gs-th-inset {
+            &.gs-th-primal { @mixin gs-set-bd color($primal-bg lightness(-10%)), color($primal-bg lightness(+10%)); }
+            &.gs-th-contra { @mixin gs-set-bd color($contra-bg lightness(-10%)), color($contra-bg lightness(+10%)); }
+            &.gs-th-accent { @mixin gs-set-bd color($accent-bg lightness(-10%)), color($accent-bg lightness(+10%)); }
+            &.gs-th-select { @mixin gs-set-bd color($select-bg lightness(-10%)), color($select-bg lightness(+10%)); }
+            &.gs-th-signal { @mixin gs-set-bd color($signal-bg lightness(-10%)), color($signal-bg lightness(+10%)); }
+            @mixin gs-set-sh 0px, 0px, 4px, 0px, 0.20, inset;
+        }
+
+        /*  generate area (outset coloring)  */
+        &.gs-th-outset,.gs-th-outset {
+            &.gs-th-primal { @mixin gs-set-bd color($primal-bg lightness(+10%)), color($primal-bg lightness(-10%)); }
+            &.gs-th-contra { @mixin gs-set-bd color($contra-bg lightness(+10%)), color($contra-bg lightness(-10%)); }
+            &.gs-th-accent { @mixin gs-set-bd color($accent-bg lightness(+10%)), color($accent-bg lightness(-10%)); }
+            &.gs-th-select { @mixin gs-set-bd color($select-bg lightness(+10%)), color($select-bg lightness(-10%)); }
+            &.gs-th-signal { @mixin gs-set-bd color($signal-bg lightness(+10%)), color($signal-bg lightness(-10%)); }
+            @mixin gs-set-sh 0px, 0px, 4px, 0px, 0.20;
+        }
+
+        /*  generate area (floating coloring)  */
+        &.gs-th-float,.gs-th-float {
+            &.gs-th-primal { @mixin gs-set-bd color($primal-bg lightness(+10%)), color($primal-bg lightness(-10%)); }
+            &.gs-th-contra { @mixin gs-set-bd color($contra-bg lightness(+10%)), color($contra-bg lightness(-10%)); }
+            &.gs-th-accent { @mixin gs-set-bd color($accent-bg lightness(+10%)), color($accent-bg lightness(-10%)); }
+            &.gs-th-select { @mixin gs-set-bd color($select-bg lightness(+10%)), color($select-bg lightness(-10%)); }
+            &.gs-th-signal { @mixin gs-set-bd color($signal-bg lightness(+10%)), color($signal-bg lightness(-10%)); }
+            @mixin gs-set-sh 2px, 2px, 6px, 0px, 0.50;
+        }
+
+        /*  generate edge coloring  */
+        &.gs-th-edge-primal,.gs-th-edge-primal { @mixin gs-set-bd $primal-bg, $primal-bg; }
+        &.gs-th-edge-contra,.gs-th-edge-contra { @mixin gs-set-bd $contra-bg, $contra-bg; }
+        &.gs-th-edge-accent,.gs-th-edge-accent { @mixin gs-set-bd $accent-bg, $accent-bg; }
+        &.gs-th-edge-select,.gs-th-edge-select { @mixin gs-set-bd $select-bg, $select-bg; }
+        &.gs-th-edge-signal,.gs-th-edge-signal { @mixin gs-set-bd $signal-bg, $signal-bg; }
+
+        /*  generate text coloring  */
+        &.gs-th-text-accent,.gs-th-text-accent { @mixin gs-set-fg $accent-bg; }
+        &.gs-th-text-select,.gs-th-text-select { @mixin gs-set-fg $select-bg; }
+        &.gs-th-text-signal,.gs-th-text-signal { @mixin gs-set-fg $signal-bg; }
+    }
+}
+

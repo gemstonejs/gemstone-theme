@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!--
+    GemstoneJS ~ Gemstone JavaScript Technology Stack
+    Copyright (c) 2016-2018 Gemstone Project <http://gemstonejs.com>
+    Licensed under Apache License 2.0 <https://spdx.org/licenses/Apache-2.0>
+-->
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Sample</title>
+        <link href="sample.css" type="text/css" rel="stylesheet"/>
+        <style type="text/css">
+            .box1 { width: 80px; text-align: center; padding: 8px; }
+            .box2 { width: 250px; text-align: center; padding: 8px; }
+            .demo { border-spacing: 8px 8px; border-collapse: separate; }
+        </style>
+    </head>
+    <body>
+        <div class="gs-th-ctx-snow gs-th-font-body">
+            <h1 class="gs-th-font-head">snow</h1>
+            <table class="demo">
+                <tr>
+                    <td class="box1 gs-th-primal gs-th-hover">  gs-th-primal<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-primal gs-th-lighter">gs-th-primal<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-primal">              gs-th-primal                  </td>
+                    <td class="box1 gs-th-primal gs-th-alt">    gs-th-primal<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-primal gs-th-darker"> gs-th-primal<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-primal gs-th-inset">  gs-th-primal<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-primal gs-th-outset"> gs-th-primal<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-primal gs-th-float">  gs-th-primal<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-contra gs-th-hover">  gs-th-contra<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-contra gs-th-lighter">gs-th-contra<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-contra">              gs-th-contra                  </td>
+                    <td class="box1 gs-th-contra gs-th-alt">    gs-th-contra<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-contra gs-th-darker"> gs-th-contra<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-contra gs-th-inset">  gs-th-contra<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-contra gs-th-outset"> gs-th-contra<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-contra gs-th-float">  gs-th-contra<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-accent gs-th-hover">  gs-th-accent<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-accent gs-th-lighter">gs-th-accent<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-accent">              gs-th-accent                  </td>
+                    <td class="box1 gs-th-accent gs-th-alt">    gs-th-accent<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-accent gs-th-darker"> gs-th-accent<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-accent gs-th-inset">  gs-th-accent<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-accent gs-th-outset"> gs-th-accent<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-accent gs-th-float">  gs-th-accent<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-select gs-th-hover">  gs-th-select<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-select gs-th-lighter">gs-th-select<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-select">              gs-th-select                  </td>
+                    <td class="box1 gs-th-select gs-th-alt">    gs-th-select<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-select gs-th-darker"> gs-th-select<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-select gs-th-inset">  gs-th-select<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-select gs-th-outset"> gs-th-select<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-select gs-th-float">  gs-th-select<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-signal gs-th-hover">  gs-th-signal<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-signal gs-th-lighter">gs-th-signal<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-signal">              gs-th-signal                  </td>
+                    <td class="box1 gs-th-signal gs-th-alt">    gs-th-signal<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-signal gs-th-darker"> gs-th-signal<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-signal gs-th-inset">  gs-th-signal<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-signal gs-th-outset"> gs-th-signal<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-signal gs-th-float">  gs-th-signal<br/>gs-th-float  </td>
+                </tr>
+            </table>
+            <table class="demo gs-th-primal">
+                <tr>
+                    <td class="box2 gs-th-primal gs-th-text-accent gs-th-edge-accent">gs-th-primal<br/>gs-th-text-accent gs-th-edge-accent</td>
+                    <td class="box2 gs-th-primal gs-th-text-select gs-th-edge-select">gs-th-primal<br/>gs-th-text-select gs-th-edge-select</td>
+                    <td class="box2 gs-th-primal gs-th-text-signal gs-th-edge-signal">gs-th-primal<br/>gs-th-text-signal gs-th-edge-signal</td>
+                </tr>
+            </table>
+            <table class="demo gs-th-contra">
+                <tr>
+                    <td class="box2 gs-th-contra gs-th-text-accent gs-th-edge-accent">gs-th-contra<br/>gs-th-text-accent gs-th-edge-accent</td>
+                    <td class="box2 gs-th-contra gs-th-text-select gs-th-edge-select">gs-th-contra<br/>gs-th-text-select gs-th-edge-select</td>
+                    <td class="box2 gs-th-contra gs-th-text-signal gs-th-edge-signal">gs-th-contra<br/>gs-th-text-signal gs-th-edge-primal</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="gs-th-ctx-carbon gs-th-font-body">
+            <h1 class="gs-th-font-head">carbon</h1>
+            <table class="demo">
+                <tr>
+                    <td class="box1 gs-th-primal gs-th-hover">  gs-th-primal<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-primal gs-th-lighter">gs-th-primal<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-primal">              gs-th-primal                  </td>
+                    <td class="box1 gs-th-primal gs-th-alt">    gs-th-primal<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-primal gs-th-darker"> gs-th-primal<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-primal gs-th-inset">  gs-th-primal<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-primal gs-th-outset"> gs-th-primal<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-primal gs-th-float">  gs-th-primal<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-contra gs-th-hover">  gs-th-contra<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-contra gs-th-lighter">gs-th-contra<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-contra">              gs-th-contra                  </td>
+                    <td class="box1 gs-th-contra gs-th-alt">    gs-th-contra<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-contra gs-th-darker"> gs-th-contra<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-contra gs-th-inset">  gs-th-contra<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-contra gs-th-outset"> gs-th-contra<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-contra gs-th-float">  gs-th-contra<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-accent gs-th-hover">  gs-th-accent<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-accent gs-th-lighter">gs-th-accent<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-accent">              gs-th-accent                  </td>
+                    <td class="box1 gs-th-accent gs-th-alt">    gs-th-accent<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-accent gs-th-darker"> gs-th-accent<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-accent gs-th-inset">  gs-th-accent<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-accent gs-th-outset"> gs-th-accent<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-accent gs-th-float">  gs-th-accent<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-select gs-th-hover">  gs-th-select<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-select gs-th-lighter">gs-th-select<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-select">              gs-th-select                  </td>
+                    <td class="box1 gs-th-select gs-th-alt">    gs-th-select<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-select gs-th-darker"> gs-th-select<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-select gs-th-inset">  gs-th-select<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-select gs-th-outset"> gs-th-select<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-select gs-th-float">  gs-th-select<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-signal gs-th-hover">  gs-th-signal<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-signal gs-th-lighter">gs-th-signal<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-signal">              gs-th-signal                  </td>
+                    <td class="box1 gs-th-signal gs-th-alt">    gs-th-signal<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-signal gs-th-darker"> gs-th-signal<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-signal gs-th-inset">  gs-th-signal<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-signal gs-th-outset"> gs-th-signal<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-signal gs-th-float">  gs-th-signal<br/>gs-th-float  </td>
+                </tr>
+            </table>
+            <table class="demo gs-th-primal">
+                <tr>
+                    <td class="box2 gs-th-primal gs-th-text-accent gs-th-edge-accent">gs-th-primal<br/>gs-th-text-accent gs-th-edge-accent</td>
+                    <td class="box2 gs-th-primal gs-th-text-select gs-th-edge-select">gs-th-primal<br/>gs-th-text-select gs-th-edge-select</td>
+                    <td class="box2 gs-th-primal gs-th-text-signal gs-th-edge-signal">gs-th-primal<br/>gs-th-text-signal gs-th-edge-signal</td>
+                </tr>
+            </table>
+            <table class="demo gs-th-contra">
+                <tr>
+                    <td class="box2 gs-th-contra gs-th-text-accent gs-th-edge-accent">gs-th-contra<br/>gs-th-text-accent gs-th-edge-accent</td>
+                    <td class="box2 gs-th-contra gs-th-text-select gs-th-edge-select">gs-th-contra<br/>gs-th-text-select gs-th-edge-select</td>
+                    <td class="box2 gs-th-contra gs-th-text-signal gs-th-edge-signal">gs-th-contra<br/>gs-th-text-signal gs-th-edge-primal</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="gs-th-ctx-rse-af gs-th-font-body">
+            <h1 class="gs-th-font-head">rse-af</h1>
+            <table class="demo">
+                <tr>
+                    <td class="box1 gs-th-primal gs-th-hover">  gs-th-primal<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-primal gs-th-lighter">gs-th-primal<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-primal">              gs-th-primal                  </td>
+                    <td class="box1 gs-th-primal gs-th-alt">    gs-th-primal<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-primal gs-th-darker"> gs-th-primal<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-primal gs-th-inset">  gs-th-primal<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-primal gs-th-outset"> gs-th-primal<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-primal gs-th-float">  gs-th-primal<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-contra gs-th-hover">  gs-th-contra<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-contra gs-th-lighter">gs-th-contra<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-contra">              gs-th-contra                  </td>
+                    <td class="box1 gs-th-contra gs-th-alt">    gs-th-contra<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-contra gs-th-darker"> gs-th-contra<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-contra gs-th-inset">  gs-th-contra<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-contra gs-th-outset"> gs-th-contra<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-contra gs-th-float">  gs-th-contra<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-accent gs-th-hover">  gs-th-accent<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-accent gs-th-lighter">gs-th-accent<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-accent">              gs-th-accent                  </td>
+                    <td class="box1 gs-th-accent gs-th-alt">    gs-th-accent<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-accent gs-th-darker"> gs-th-accent<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-accent gs-th-inset">  gs-th-accent<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-accent gs-th-outset"> gs-th-accent<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-accent gs-th-float">  gs-th-accent<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-select gs-th-hover">  gs-th-select<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-select gs-th-lighter">gs-th-select<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-select">              gs-th-select                  </td>
+                    <td class="box1 gs-th-select gs-th-alt">    gs-th-select<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-select gs-th-darker"> gs-th-select<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-select gs-th-inset">  gs-th-select<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-select gs-th-outset"> gs-th-select<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-select gs-th-float">  gs-th-select<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-signal gs-th-hover">  gs-th-signal<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-signal gs-th-lighter">gs-th-signal<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-signal">              gs-th-signal                  </td>
+                    <td class="box1 gs-th-signal gs-th-alt">    gs-th-signal<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-signal gs-th-darker"> gs-th-signal<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-signal gs-th-inset">  gs-th-signal<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-signal gs-th-outset"> gs-th-signal<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-signal gs-th-float">  gs-th-signal<br/>gs-th-float  </td>
+                </tr>
+            </table>
+            <table class="demo gs-th-primal">
+                <tr>
+                    <td class="box2 gs-th-primal gs-th-text-accent gs-th-edge-accent">gs-th-primal<br/>gs-th-text-accent gs-th-edge-accent</td>
+                    <td class="box2 gs-th-primal gs-th-text-select gs-th-edge-select">gs-th-primal<br/>gs-th-text-select gs-th-edge-select</td>
+                    <td class="box2 gs-th-primal gs-th-text-signal gs-th-edge-signal">gs-th-primal<br/>gs-th-text-signal gs-th-edge-signal</td>
+                </tr>
+            </table>
+            <table class="demo gs-th-contra">
+                <tr>
+                    <td class="box2 gs-th-contra gs-th-text-accent gs-th-edge-accent">gs-th-contra<br/>gs-th-text-accent gs-th-edge-accent</td>
+                    <td class="box2 gs-th-contra gs-th-text-select gs-th-edge-select">gs-th-contra<br/>gs-th-text-select gs-th-edge-select</td>
+                    <td class="box2 gs-th-contra gs-th-text-signal gs-th-edge-signal">gs-th-contra<br/>gs-th-text-signal gs-th-edge-primal</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="gs-th-ctx-rse-ad gs-th-font-body">
+            <h1 class="gs-th-font-head">rse-ad</h1>
+            <table class="demo">
+                <tr>
+                    <td class="box1 gs-th-primal gs-th-hover">  gs-th-primal<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-primal gs-th-lighter">gs-th-primal<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-primal">              gs-th-primal                  </td>
+                    <td class="box1 gs-th-primal gs-th-alt">    gs-th-primal<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-primal gs-th-darker"> gs-th-primal<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-primal gs-th-inset">  gs-th-primal<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-primal gs-th-outset"> gs-th-primal<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-primal gs-th-float">  gs-th-primal<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-contra gs-th-hover">  gs-th-contra<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-contra gs-th-lighter">gs-th-contra<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-contra">              gs-th-contra                  </td>
+                    <td class="box1 gs-th-contra gs-th-alt">    gs-th-contra<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-contra gs-th-darker"> gs-th-contra<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-contra gs-th-inset">  gs-th-contra<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-contra gs-th-outset"> gs-th-contra<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-contra gs-th-float">  gs-th-contra<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-accent gs-th-hover">  gs-th-accent<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-accent gs-th-lighter">gs-th-accent<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-accent">              gs-th-accent                  </td>
+                    <td class="box1 gs-th-accent gs-th-alt">    gs-th-accent<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-accent gs-th-darker"> gs-th-accent<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-accent gs-th-inset">  gs-th-accent<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-accent gs-th-outset"> gs-th-accent<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-accent gs-th-float">  gs-th-accent<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-select gs-th-hover">  gs-th-select<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-select gs-th-lighter">gs-th-select<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-select">              gs-th-select                  </td>
+                    <td class="box1 gs-th-select gs-th-alt">    gs-th-select<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-select gs-th-darker"> gs-th-select<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-select gs-th-inset">  gs-th-select<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-select gs-th-outset"> gs-th-select<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-select gs-th-float">  gs-th-select<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-signal gs-th-hover">  gs-th-signal<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-signal gs-th-lighter">gs-th-signal<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-signal">              gs-th-signal                  </td>
+                    <td class="box1 gs-th-signal gs-th-alt">    gs-th-signal<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-signal gs-th-darker"> gs-th-signal<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-signal gs-th-inset">  gs-th-signal<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-signal gs-th-outset"> gs-th-signal<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-signal gs-th-float">  gs-th-signal<br/>gs-th-float  </td>
+                </tr>
+            </table>
+            <table class="demo gs-th-primal">
+                <tr>
+                    <td class="box2 gs-th-primal gs-th-text-accent gs-th-edge-accent">gs-th-primal<br/>gs-th-text-accent gs-th-edge-accent</td>
+                    <td class="box2 gs-th-primal gs-th-text-select gs-th-edge-select">gs-th-primal<br/>gs-th-text-select gs-th-edge-select</td>
+                    <td class="box2 gs-th-primal gs-th-text-signal gs-th-edge-signal">gs-th-primal<br/>gs-th-text-signal gs-th-edge-signal</td>
+                </tr>
+            </table>
+            <table class="demo gs-th-contra">
+                <tr>
+                    <td class="box2 gs-th-contra gs-th-text-accent gs-th-edge-accent">gs-th-contra<br/>gs-th-text-accent gs-th-edge-accent</td>
+                    <td class="box2 gs-th-contra gs-th-text-select gs-th-edge-select">gs-th-contra<br/>gs-th-text-select gs-th-edge-select</td>
+                    <td class="box2 gs-th-contra gs-th-text-signal gs-th-edge-signal">gs-th-contra<br/>gs-th-text-signal gs-th-edge-primal</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="gs-th-ctx-msg-ci gs-th-font-body">
+            <h1 class="gs-th-font-head">msg-ci</h1>
+            <table class="demo">
+                <tr>
+                    <td class="box1 gs-th-primal gs-th-hover">  gs-th-primal<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-primal gs-th-lighter">gs-th-primal<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-primal">              gs-th-primal                  </td>
+                    <td class="box1 gs-th-primal gs-th-alt">    gs-th-primal<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-primal gs-th-darker"> gs-th-primal<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-primal gs-th-inset">  gs-th-primal<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-primal gs-th-outset"> gs-th-primal<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-primal gs-th-float">  gs-th-primal<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-contra gs-th-hover">  gs-th-contra<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-contra gs-th-lighter">gs-th-contra<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-contra">              gs-th-contra                  </td>
+                    <td class="box1 gs-th-contra gs-th-alt">    gs-th-contra<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-contra gs-th-darker"> gs-th-contra<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-contra gs-th-inset">  gs-th-contra<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-contra gs-th-outset"> gs-th-contra<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-contra gs-th-float">  gs-th-contra<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-accent gs-th-hover">  gs-th-accent<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-accent gs-th-lighter">gs-th-accent<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-accent">              gs-th-accent                  </td>
+                    <td class="box1 gs-th-accent gs-th-alt">    gs-th-accent<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-accent gs-th-darker"> gs-th-accent<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-accent gs-th-inset">  gs-th-accent<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-accent gs-th-outset"> gs-th-accent<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-accent gs-th-float">  gs-th-accent<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-select gs-th-hover">  gs-th-select<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-select gs-th-lighter">gs-th-select<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-select">              gs-th-select                  </td>
+                    <td class="box1 gs-th-select gs-th-alt">    gs-th-select<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-select gs-th-darker"> gs-th-select<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-select gs-th-inset">  gs-th-select<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-select gs-th-outset"> gs-th-select<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-select gs-th-float">  gs-th-select<br/>gs-th-float  </td>
+                </tr>
+                <tr>
+                    <td class="box1 gs-th-signal gs-th-hover">  gs-th-signal<br/>gs-th-hover  </td>
+                    <td class="box1 gs-th-signal gs-th-lighter">gs-th-signal<br/>gs-th-lighter</td>
+                    <td class="box1 gs-th-signal">              gs-th-signal                  </td>
+                    <td class="box1 gs-th-signal gs-th-alt">    gs-th-signal<br/>gs-th-alt    </td>
+                    <td class="box1 gs-th-signal gs-th-darker"> gs-th-signal<br/>gs-th-darker </td>
+                    <td class="box1 gs-th-signal gs-th-inset">  gs-th-signal<br/>gs-th-inset  </td>
+                    <td class="box1 gs-th-signal gs-th-outset"> gs-th-signal<br/>gs-th-outset </td>
+                    <td class="box1 gs-th-signal gs-th-float">  gs-th-signal<br/>gs-th-float  </td>
+                </tr>
+            </table>
+            <table class="demo gs-th-primal">
+                <tr>
+                    <td class="box2 gs-th-primal gs-th-text-accent gs-th-edge-accent">gs-th-primal<br/>gs-th-text-accent gs-th-edge-accent</td>
+                    <td class="box2 gs-th-primal gs-th-text-select gs-th-edge-select">gs-th-primal<br/>gs-th-text-select gs-th-edge-select</td>
+                    <td class="box2 gs-th-primal gs-th-text-signal gs-th-edge-signal">gs-th-primal<br/>gs-th-text-signal gs-th-edge-signal</td>
+                </tr>
+            </table>
+            <table class="demo gs-th-contra">
+                <tr>
+                    <td class="box2 gs-th-contra gs-th-text-accent gs-th-edge-accent">gs-th-contra<br/>gs-th-text-accent gs-th-edge-accent</td>
+                    <td class="box2 gs-th-contra gs-th-text-select gs-th-edge-select">gs-th-contra<br/>gs-th-text-select gs-th-edge-select</td>
+                    <td class="box2 gs-th-contra gs-th-text-signal gs-th-edge-signal">gs-th-contra<br/>gs-th-text-signal gs-th-edge-primal</td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+</html>

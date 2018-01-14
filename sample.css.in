@@ -1,0 +1,98 @@
+/*
+**  GemstoneJS -- Gemstone JavaScript Technology Stack
+**  Copyright (c) 2016-2018 Gemstone Project <http://gemstonejs.com>
+**  Licensed under Apache License 2.0 <https://spdx.org/licenses/Apache-2.0>
+*/
+
+@import "gemstone-theme.css";
+
+@mixin gs-th-generate
+    /* name:      */ snow,
+    /* head-font: */ sans-serif,
+    /* head-size: */ 16pt,
+    /* body-font: */ sans-serif,
+    /* body-size: */ 10pt,
+    /* primal-bg: */ #ffffff,
+    /* primal-fg: */ #333333,
+    /* contra-bg: */ #f0f0f0,
+    /* contra-fg: */ #222222,
+    /* accent-bg: */ #5098e0,
+    /* accent-fg: */ #ffffff,
+    /* select-bg: */ #666666,
+    /* select-fg: */ #ffffff,
+    /* signal-bg: */ #2068b0,
+    /* signal-fg: */ #ffffff
+;
+
+@mixin gs-th-generate
+    /* name:      */ carbon,
+    /* head-font: */ sans-serif,
+    /* head-size: */ 16pt,
+    /* body-font: */ sans-serif,
+    /* body-size: */ 10pt,
+    /* primal-bg: */ #444444,
+    /* primal-fg: */ #f0f0f0,
+    /* contra-bg: */ #222222,
+    /* contra-fg: */ #f0f0f0,
+    /* accent-bg: */ #76b900,
+    /* accent-fg: */ #ffffff,
+    /* select-bg: */ #76b900,
+    /* select-fg: */ #ffffff,
+    /* signal-bg: */ #5098e0,
+    /* signal-fg: */ #ffffff
+;
+
+@mixin gs-th-generate
+    /* name:      */ rse-af,
+    /* head-font: */ sans-serif,
+    /* head-size: */ 16pt,
+    /* body-font: */ sans-serif,
+    /* body-size: */ 10pt,
+    /* primal-bg: */ #ffffff,
+    /* primal-fg: */ #222222,
+    /* contra-bg: */ #e0e0e0,
+    /* contra-fg: */ #222222,
+    /* accent-bg: */ #2068b0,
+    /* accent-fg: */ #ffffff,
+    /* select-bg: */ #b06820,
+    /* select-fg: */ #ffffff,
+    /* signal-bg: */ #b02020,
+    /* signal-fg: */ #ffffff
+;
+
+@mixin gs-th-generate
+    /* name:      */ rse-ad,
+    /* head-font: */ sans-serif,
+    /* head-size: */ 16pt,
+    /* body-font: */ sans-serif,
+    /* body-size: */ 10pt,
+    /* primal-bg: */ #ffffff,
+    /* primal-fg: */ #222222,
+    /* contra-bg: */ #fcf4ed,
+    /* contra-fg: */ #222222,
+    /* accent-bg: */ #b06820,
+    /* accent-fg: */ #ffffff,
+    /* select-bg: */ #904800,
+    /* select-fg: */ #ffffff,
+    /* signal-bg: */ #333333,
+    /* signal-fg: */ #ffffff
+;
+
+@mixin gs-th-generate
+    /* name:      */ msg-ci,
+    /* head-font: */ sans-serif,
+    /* head-size: */ 16pt,
+    /* body-font: */ sans-serif,
+    /* body-size: */ 10pt,
+    /* primal-bg: */ #ffffff,
+    /* primal-fg: */ #222222,
+    /* contra-bg: */ #e0e0e0,
+    /* contra-fg: */ #222222,
+    /* accent-bg: */ #64a3bb,
+    /* accent-fg: */ #ffffff,
+    /* select-bg: */ #81193a,
+    /* select-fg: */ #ffffff,
+    /* signal-bg: */ #ce8a20,
+    /* signal-fg: */ #ffffff
+;
+
