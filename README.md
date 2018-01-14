@@ -14,7 +14,7 @@ About
 
 This is the Theming framework for the
 [Gemstone JavaScript Technology Stack](http://gemstonejs.com).
-It consists of an elabortated PostCSS mixin for generating
+It consists of an extensive PostCSS mixin for generating
 a CSS based theme for Gemstone.
 
 Copyright &amp; License
